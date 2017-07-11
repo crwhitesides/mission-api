@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyText
+  last_name: MyText
+  birth_date: 2017-07-11 17:19:51
+  nationality: MyText
+  start_date: 2017-07-11 17:19:51
+  leadership_assignment: MyText
+  companionship: one
+
+two:
+  first_name: MyText
+  last_name: MyText
+  birth_date: 2017-07-11 17:19:51
+  nationality: MyText
+  start_date: 2017-07-11 17:19:51
+  leadership_assignment: MyText
+  companionship: two
