@@ -1,0 +1,2 @@
+class Companionship < ApplicationRecord
+end

@@ -2,8 +2,8 @@
 
 one:
   name: MyText
-  zone: one
+  references: 
 
 two:
   name: MyText
-  zone: two
+  references: 

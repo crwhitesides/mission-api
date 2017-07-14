@@ -2,8 +2,8 @@
 
 one:
   name: MyText
-  district: one
+  references: 
 
 two:
   name: MyText
-  district: two
+  references: 

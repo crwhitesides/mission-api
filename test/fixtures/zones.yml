@@ -2,8 +2,8 @@
 
 one:
   name: MyText
-  mission: one
+  references: 
 
 two:
   name: MyText
-  mission: two
+  references: 

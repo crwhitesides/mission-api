@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170714203930) do
+ActiveRecord::Schema.define(version: 20170714212355) do
+
+  create_table "areas", force: :cascade do |t|
+    t.text     "name"
+    t.integer  "district_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["district_id"], name: "index_areas_on_district_id"
+  end
+
+  create_table "companionships", force: :cascade do |t|
+    t.integer  "area_id"
+    t.integer  "missionary_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["area_id"], name: "index_companionships_on_area_id"
+    t.index ["missionary_id"], name: "index_companionships_on_missionary_id"
+  end
 
   create_table "districts", force: :cascade do |t|
     t.text     "name"
@@ -18,6 +35,17 @@ ActiveRecord::Schema.define(version: 20170714203930) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["zone_id"], name: "index_districts_on_zone_id"
+  end
+
+  create_table "missionaries", force: :cascade do |t|
+    t.text     "first_name"
+    t.text     "last_name"
+    t.datetime "dob"
+    t.text     "nationality"
+    t.datetime "date_began_mission"
+    t.text     "leadership_assignment"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "missions", force: :cascade do |t|
