@@ -1,4 +1,4 @@
-class API:MissionsController < ApplicationController
+class Api::MissionsController < ApplicationController
   def index
     missions = Mission.all
     render json: missions
